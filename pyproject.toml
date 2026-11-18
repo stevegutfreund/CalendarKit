@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "calendarkit"
+version = "0.1.0"
+description = "Shared building blocks for the home apps: .env settings, Google Calendar client, Hebrew dates."
+requires-python = ">=3.10"
+dependencies = [
+    "pyluach>=2.0",
+    "google-api-python-client>=2.0",
+    "google-auth>=2.0",
+    "google-auth-oauthlib>=0.5",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
